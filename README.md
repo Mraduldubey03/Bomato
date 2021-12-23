@@ -1,2 +1,2 @@
 # Bomato
-BOMATO is a designd prototype design by DigitalMradul
+BOMATO is a design prototype for restaurant design by Digital Mradul

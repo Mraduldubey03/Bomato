@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    /* height: 80px; */
+    background-color: black;
+    color: chocolate;
+    
+
+}
+.navbar .logo h1{
+    display: grid;
+    position: left;
+    justify-content: flex-start;
+    position: relative;
+    left: 0px;
+    right: 300px;
+    
+}
+.navbar a{
+    display: flex;
+    float: right;
+    color: white;
+    font-size: 1.2em;
+    padding: 14px 28px;
+    align-items: center ;
+
+}
+.navbar a:hover{
+    background-color:chocolate;
+    color: white;
+}
+#toggle{
+    display: none;
+}
+.togglearea{
+    background-color: black;
+    border-bottom: 3px solid white;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.togglearea h1{
+    display: flex;
+    justify-content: flex-start;
+    color: chocolate;
+    font-size: 2em;
+    position: relative;
+    right: 100px;
+}
+.togglearea label{
+    background-color: white;
+    width: 50px;
+    height: 45px;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.togglearea label span{
+    background-color: black;
+    height: 3px;
+    width: 70%;
+    margin: 3px;
+}
+.togglearea{
+    display: none;
+}
+.sec1{
+    background-image: url(img/headerimg.jpg);
+    background-color: rgba(0, 0, 0, 0.733);
+    width: 100%;
+    height: 550px;
+    background-position: top;
+}
+.sec1 h1{
+    font-size: 6em;
+    font-weight: 700;
+    color: white;
+    padding: 80px;
+}
+.sec1 button{
+    background-color: chocolate;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 2em;
+}
+.sec2{
+    width: 100%;
+    height: 500px;
+    
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px,1fr));
+
+    gap: 20px;
+    grid-auto-columns: minmax(600px, auto);
+
+
+
+}
+.sec2 h2{
+    font-size: 3.5em;
+    color: chocolate;
+    padding: 70px;
+    padding-top: 50px;
+}
+.sec2 p{
+    font-size: 1.5em;
+    color: black;
+    line-height: 1.5em;
+    text-align: justify;
+    padding: 70px;
+    padding-top: 50px;
+
+}
+.btn{
+    display: flex;
+    background-color: chocolate;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 2em;
+    position: relative;
+    bottom: 150px;
+    
+}
+
+
+.sec3{
+    position: relative;
+    bottom: 100px;
+    width: 100%;
+    height: 800px;
+    background-image: url(img/headimg2.jpg);
+    background-position: fixed;
+    
+}
+.sec3 h1{
+    font-size: 6em;
+    font-weight: 700;
+    color: white;
+    padding: 80px;
+
+}
+.sec3 h1 span{
+    color: chocolate;
+}
+.sec3 p{
+    position: relative;
+    bottom: 60px;
+    font-size: 1.5em;
+    color: white;   
+    background-color: rgba(102, 102, 104, 0.377);
+    width: 100%;
+    padding: 50px;
+
+}
+.btn1 .btn2{
+    position: relative;
+    bottom: 180px;
+}
+.sec4{
+    position: relative;
+    bottom: 180px;
+    width: 100%;
+    height: 600px;
+    background-color: aliceblue;
+    color: rgba(24, 24, 77, 0.863);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    
+}
+.sec4 .card{
+    padding: 20px;
+    position: relative;
+    top: 50px;
+    width: auto;
+    height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.sec4 .card h1{
+    padding: 15px;
+    margin: 0px auto;
+}
+.sec4 .card p{
+    padding: 20px;
+    justify-content: center;
+    font-size: 1.5em;
+    line-height: 1em;
+}
+.sec5{
+    position: relative;
+    margin-top: -200px;
+    
+    width: 100%;
+    height: 350px;
+    background-color: chocolate;
+    background-repeat: repeat-y;
+    color: black;
+}
+.sec5 h1{
+    font-size: 5em;
+    color: white;
+    padding: 50px;
+}
+.sec5 a{
+    color: white;
+}
+.sec5 p{
+    background-color: rgba(0, 0, 0, 0.486);
+    font-size: 1.5em;
+    margin-top: 50px;
+    padding: 10px;
+    color: white;
+}
+.sec5 p a{
+    color: chocolate;
+}
+
+
+@media screen and (max-width:700px) {
+    .navbar{
+        flex-direction: column;
+        display: none;
+
+    }
+    #toggle:checked + .navbar{
+        display: flex;
+    }
+    .togglearea{
+        display: flex;
+    }
+    .sec1 h1{
+        font-size: 2em;
+    }
+    
+}
+
